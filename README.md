@@ -208,11 +208,43 @@ The following tools were used in building the project:<br><br>
     <br>
     <li &nbsp;>Part 2 - Advancing the backend and frontend<br/>
       <ul &nbsp;>
+        <li &nbsp;><b>Backend project</b>
+          <ul>
+            <li>Define "Use Cases"</li>
+            <li>Set routes</li>
+            <li>Install and set Prisma
+              <ul>
+                <li>Install (for development): npm i prisma -D</li>
+                <li>Create tables and entities: ./prisma/schema.prisma</li>
+                <li>Relation between entities</li> 
+                <li>Run migrations: npx prisma migrate dev
+                  <>
+                    <li>Name for the new migration: create the rest of the tables</li>
+                    <li>Name for the new migration: create habits</li>
+                    <li>Name for the new migration: create relations</li>
+                  </ul>
+                </li>
+                <li>To see DB generated from Prisma: npx prisma studio</li>
+                <li>Install Prisma Entity Relationship Diagram Generator: npm i -D prisma-erd-generator @mermaid-js/mermaid-cli</li>
+                <li>Generate: npx prisma generate</li>
+                <li>Create Seed: ./prisma/seed.ts</li>
+                <li>Run seed: npx prisma db seed</li>
+              </ul>
+            </li>
+            <li>Cors library (Protection for non-desirable access) 
+              <ul>
+                <li> npm i @types/cors -D </li>
+                <li> npm i @types/cors </li>
+              </ul>
+            </li>
+            <li>Zod: npm i zod</li>
+            <li>Day.JS: npm i dayjs</li>
+          </ul>
+        </li>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Customize contents, themes, fonts and plugins with Tailwind: ./tailwind.config.js</li>
-            <li>Customize the main style: ./src/styles/global.css</li>
             <li>Convert a svg file (Logo) code to React component: https://svg2jsx.com/</li>
+            <li>Install Day.JS: npm i dayjs</li>
             <li>Install Phosphor Icons: npm i phosphor-react</li>
             <li>Set Google Fonts: ./index.html</li>
             <li>Set the Landing Page: ./src/App.tsx</li>
@@ -223,45 +255,21 @@ The following tools were used in building the project:<br><br>
             <li>Set images, theme and utils for the project</li>
             <li>Load customized font: ./src/App.tsx</li>
             <li>Create the Splash Page</li>
-            <li>Create components: Background, GameCard, Heading, Loading</li>
-            <li>Create Home screen: ./src/screens/Home/index.tsx</li>
+            <li>Create components: HabitDay, Header, Loading</li>
+            <li>Create Home screen: ./src/screens/Home.tsx</li>
           </ul>
         </li>
       </ul>
     <br>
     <li &nbsp;>Part 3 - To be continued<br/>
       <ul &nbsp;> 
-        <li &nbsp;><b>Backend project</b>
+        <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Define "Use Cases"</li>
-            <li>Set routes</li>
-            <li>Install and set Prisma
-              <ul>
-                <li>Install (for development): npm i prisma -D</li>
-                <li>Set Database SQLite: npx prisma init --datasource-provider SQLite</li>
-                <li>Create tables and entities (Game, Ads): ./prisma/schema.prisma</li>
-                <li>Relation between entities:
-                  <ul>
-                    <li>Game and Ads: One to Many</li>
-                  </ul>
-                </li> 
-                <li>Run migrations: npx prisma migrate dev
-                  <ul>
-                    <li>Name for the new migration: create table games</li>
-                    <li>Name for the new migration: create table ads</li>
-                  </ul>
-                </li>
-                <li>To see DB generated from Prisma: npx prisma studio</li>
-                <li>Install Prisma Client: npm i @prisma/client</li>
-                <li>Generate: npx prisma generate</li>
-              </ul>
-            </li>
-            <li>Cors library (Protection for non-desirable access) 
-              <ul>
-                <li> npm i @types/cors -D </li>
-                <li> npm i @types/cors </li>
-              </ul>
-            </li>
+            <li>Set images, theme and utils for the project</li>
+            <li>Load customized font: ./src/App.tsx</li>
+            <li>Create the Splash Page</li>
+            <li>Create components: Background, GameCard, Heading, Loading</li>
+            <li>Create Home screen: ./src/screens/Home/index.tsx</li>
           </ul>
         </li>
         <li &nbsp;><b>Testing</b>
