@@ -275,11 +275,43 @@ The following tools were used in building the project:<br><br>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Set images, theme and utils for the project</li>
-            <li>Load customized font: ./src/App.tsx</li>
-            <li>Create the Splash Page</li>
-            <li>Create components: Background, GameCard, Heading, Loading</li>
-            <li>Create Home screen: ./src/screens/Home/index.tsx</li>
+            <li>Habit screen: ./src/screens/Habit.tsx
+              <ul>
+                <li>Register a new habit</li>
+                <li>Show habit details</li>
+              </ul>
+            </li>
+            <li>Implementing Navigation
+              <ul>
+                <li>Create app routes</li>
+                <li>Navigate to register screen: ./src/screens/New.tsx</li>
+                <li>Set navigation routes types</li>
+                <li>Navigate to habit screen: ./src/screens/Habit.tsx</li>
+              </ul>
+            </li>
+            <li>Create register habits interface
+              <ul>
+                <li>Create components: BackButton, Checkbox</li>
+                <li>Implementing back button at register screen</li>
+                <li>New habit input</li>
+                <li>List a checkbox for each day of the week</li>
+                <li>Create the check/uncheck checkbox function</li>
+                <li>Confirm button</li>
+                <li>Use ScrollView to enable scrolling</li>
+              </ul>
+            </li>
+            <li>Create the daily habits interface
+              <ul>
+                <li>Navigate to habit screen</li>
+                <li>Use ScrollView to enable scrolling</li>
+                <li>Reuse the BackButton component</li>
+                <li>Passing and retrieving date as route parameter</li>
+                <li>Format and display the day of the week</li>
+                <li>Format and display the day/month</li>
+                <li>Create ProgressBar component</li>
+                <li>Use Checkbox component</li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li &nbsp;><b>Testing</b>
