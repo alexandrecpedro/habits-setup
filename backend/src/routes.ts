@@ -75,7 +75,7 @@ export async function appRoutes(app: FastifyInstance) {
     })
 
     // completar / não-completar um hábito
-    // localhost:3333/habits/1/toggle
+    // localhost:3333/habits/2023-01-19T14:00:00.000z/toggle
     app.patch('/habits/:id/toggle', async (request) => {
         // route param => parâmetro de identificação
 
@@ -128,7 +128,11 @@ export async function appRoutes(app: FastifyInstance) {
         }
     })
 
+    // localhost:3333/summary
     app.get('/summary', async () => {
+        // Query mais complexa, mais condições, relacionamentos => SQL na mão (RAW)
+        // Prisma ORM: RAW SQL => SQLite
+
         const summary = await prisma.$queryRaw`
             SELECT 
                 D.id, 
@@ -146,7 +150,7 @@ export async function appRoutes(app: FastifyInstance) {
                     JOIN habits H
                         ON H.id = HDW.habit_id
                     WHERE
-                        HDW.week_day = cast(strftime('%w', D.date/1000.0, 'unixepoch') as int)
+                        HDW.week_day = cast(strftime('%w', D.date/1000.0, 'unixepoch') as int) 
                         AND H.created_at <= D.date
                 ) as amount
             FROM days D

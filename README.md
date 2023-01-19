@@ -141,14 +141,22 @@ The following tools were used in building the project:<br><br>
                 <li>Create tables and entities: ./prisma/schema.prisma</li>
                 <li>Run migrations: npx prisma migrate dev
                   <ul>
-                    <li>Name for the new migration: create table habits</li>
+                    <li>Name for the new migration: create the rest of the tables</li>
+                    <li>Name for the new migration: create habits</li>
+                    <li>Name for the new migration: create relations</li>
                   </ul>
                 </li>
                 <li>To see DB generated from Prisma: npx prisma studio</li>
                 <li>Generate: npx prisma generate</li>
               </ul>
             </li>
-            <li>Cors library (Protection for non-desirable access): npm i @fastify/cors</li>
+            <li>Cors library (Protection for non-desirable access) 
+              <ul>
+                <li> npm i @types/cors -D </li>
+                <li> npm i @types/cors </li>
+                <li> npm i @fastify/cors </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li &nbsp;><b>Frontend project</b>
@@ -214,27 +222,10 @@ The following tools were used in building the project:<br><br>
             <li>Set routes</li>
             <li>Install and set Prisma
               <ul>
-                <li>Install (for development): npm i prisma -D</li>
-                <li>Create tables and entities: ./prisma/schema.prisma</li>
-                <li>Relation between entities</li> 
-                <li>Run migrations: npx prisma migrate dev
-                  <ul>
-                    <li>Name for the new migration: create the rest of the tables</li>
-                    <li>Name for the new migration: create habits</li>
-                    <li>Name for the new migration: create relations</li>
-                  </ul>
-                </li>
-                <li>To see DB generated from Prisma: npx prisma studio</li>
                 <li>Install Prisma Entity Relationship Diagram Generator: npm i -D prisma-erd-generator @mermaid-js/mermaid-cli</li>
                 <li>Generate: npx prisma generate</li>
                 <li>Create Seed: ./prisma/seed.ts</li>
                 <li>Run seed: npx prisma db seed</li>
-              </ul>
-            </li>
-            <li>Cors library (Protection for non-desirable access) 
-              <ul>
-                <li> npm i @types/cors -D </li>
-                <li> npm i @types/cors </li>
               </ul>
             </li>
             <li>Zod: npm i zod</li>
@@ -266,47 +257,20 @@ The following tools were used in building the project:<br><br>
         <li &nbsp;><b>Backend project</b>
           <ul>
             <li>Set routes: ./src/routes.ts</li>
-            <li>Install and set Prisma
-              <ul>
-                <li>Install (for development): npm i prisma -D</li>
-                <li>Create tables and entities: ./prisma/schema.prisma</li>
-                <li>Relation between entities</li> 
-                <li>Run migrations: npx prisma migrate dev
-                  <>
-                    <li>Name for the new migration: create the rest of the tables</li>
-                    <li>Name for the new migration: create habits</li>
-                    <li>Name for the new migration: create relations</li>
-                  </ul>
-                </li>
-                <li>To see DB generated from Prisma: npx prisma studio</li>
-                <li>Install Prisma Entity Relationship Diagram Generator: npm i -D prisma-erd-generator @mermaid-js/mermaid-cli</li>
-                <li>Generate: npx prisma generate</li>
-                <li>Create Seed: ./prisma/seed.ts</li>
-                <li>Run seed: npx prisma db seed</li>
-              </ul>
-            </li>
-            <li>Cors library (Protection for non-desirable access) 
-              <ul>
-                <li> npm i @types/cors -D </li>
-                <li> npm i @types/cors </li>
-              </ul>
-            </li>
-            <li>Zod: npm i zod</li>
-            <li>Day.JS: npm i dayjs</li>
           </ul>
         </li>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Create components: GameBanner, CreateAdBanner</li>
-            <li>Use React Hooks: useState, useEffect</li>
-            <li>Listing games</li>
             <li>Create feature: publish an ad (modal)
               <ul>
                 <li>Install Radix-UI: npm i @radix-ui/react-dialog </li>
+                <li>Install Radix-UI: npm i @radix-ui/react-popover </li>
+                <li>Install CLSX: npm i clsx </li>
               </ul>
             </li>
-            <li>Create Input component: ./src/components/Form/Input.tsx</li>
-            <li>Connect with API (backend service)</li>
+            <li>Get form data</li>
+            <li>Day detail popover</li>
+            <li>Synchronize completed habit</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
