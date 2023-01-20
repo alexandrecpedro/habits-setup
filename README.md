@@ -248,6 +248,8 @@ The following tools were used in building the project:<br><br>
             <li>Create the Splash Page</li>
             <li>Create components: HabitDay, Header, Loading</li>
             <li>Create Home screen: ./src/screens/Home.tsx</li>
+            <li>React Native Phosphor Icon Library: npm install --save phosphor-react-native</li>
+            <li>React Native Svg Library: expo install react-native-svg</li>
           </ul>
         </li>
       </ul>
@@ -283,7 +285,13 @@ The following tools were used in building the project:<br><br>
             </li>
             <li>Implementing Navigation
               <ul>
-                <li>Create app routes</li>
+                <li>Create app routes
+                  <ul>
+                    <li>Native Stack Navigator: ./src/routes/app.routes.tsx</li>
+                    <li>Navigation Strategy: ./src/routes/index.tsx</li>
+                    <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
+                  </ul>
+                </li>
                 <li>Navigate to register screen: ./src/screens/New.tsx</li>
                 <li>Set navigation routes types</li>
                 <li>Navigate to habit screen: ./src/screens/Habit.tsx</li>
@@ -322,35 +330,49 @@ The following tools were used in building the project:<br><br>
       </ul>
     </li>
     <br>
-    <li &nbsp;>Part 4 - Power up<br/>
+    <li &nbsp;>Part 4 - Connecting the API<br/>
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Create components: GameBanner, CreateAdBanner</li>
-            <li>Use React Hooks: useState, useEffect</li>
-            <li>Listing games</li>
-            <li>Create feature: publish an ad (modal)
+            <li>Creating checkboxes: npm i @radix-ui/react-checkbox</li>
+            <li>Get form data</li>
+            <li>Syncing completed habits</li>
+            <li>Connection with back-end
               <ul>
-                <li>Install Radix-UI: npm i @radix-ui/react-dialog </li>
+                <li>Set HTTP client</li>
+                <li>Fetching API summary</li>
+                <li>Using API data at Popover</li>
+                <li>Register a new habit</li>
               </ul>
             </li>
-            <li>Create Input component: ./src/components/Form/Input.tsx</li>
-            <li>Connect with API (backend service)</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Create Game page: ./src/screens/Game/index.tsx</li>
-            <li>Set Routes
+            <li>Starting the server</li>
+            <li>Installing the Axios
               <ul>
-                <li>Native Stack Navigator: ./src/routes/app.routes.tsx</li>
-                <li>Navigation Strategy: ./src/routes/index.tsx</li>
-                <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
+                <li>Set server access</li>
               </ul>
             </li>
-            <li>Create components: DuoCard, DuoInfo</li>
-            <li>React Native Phosphor Icon Library: npm install --save phosphor-react-native</li>
-            <li>React Native Svg Library: expo install react-native-svg</li>
+            <li>Home
+              <ul>
+                <li>Listing the summary</li>
+                <li>Using Loading component</li>
+                <li>Passing properties in HabitDay component
+                  <ul>
+                    <li>Creating a function to calculate the percentage of progress</li>
+                    <li>Using clsx to use conditional classes: npm i --save clsx</li>
+                  </ul>
+                </li>
+                <li>New
+                  <ul>
+                    <li>Getting form data</li>
+                    <li>Registering and sending new habit to API</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li>Connect with API (backend service)</li>
           </ul>
         </li>
