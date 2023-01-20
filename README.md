@@ -379,7 +379,7 @@ The following tools were used in building the project:<br><br>
       </ul> 
     </li> 
     <br>
-    <li &nbsp;>Part 5 - Final Round<br />
+    <li &nbsp;>Part 5 - The next level<br />
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
