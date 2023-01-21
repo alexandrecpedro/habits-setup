@@ -444,7 +444,6 @@ The following tools were used in building the project:<br><br>
     <br>
   </ol>
 </div>
-<br>
 
 <div id="howtouse">
 <h2>🧪 How to use</h2>
