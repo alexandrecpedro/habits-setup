@@ -15,8 +15,7 @@
 |                                                                                     |                                                                                   |                                                                                        |
 | :---------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 |   <img width="1604" alt="Splash Page - Mobile" src="./project/screens/screen3.png">    |   <img width="1604" alt="Home Page - Mobile" src="./project/screens/screen4.png">   |   <img width="1604" alt="Specific Day - Mobile" src="./project/screens/screen5.png">   |
-|   <img width="1604" alt="New Habit - Mobile" src="./project/screens/screen6.png">   | <img width="1604" alt="Home (no history) - Mobile" src="./project/screens/screen7.png"> |
-| <img width="1604" alt="Specific Day (no history) - Mobile" src="./project/screens/screen8.png"> |
+|   <img width="1604" alt="New Habit - Mobile" src="./project/screens/screen6.png">   | <img width="1604" alt="Home (no history) - Mobile" src="./project/screens/screen7.png"> | <img width="1604" alt="Specific Day (no history) - Mobile" src="./project/screens/screen8.png"> |
 
 <br>
 
