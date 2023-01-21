@@ -71,7 +71,7 @@ The following tools were used in building the project:<br><br>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
   <!-- <img height =' 100px ' left=' 20px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/> -->
   <img height =' 100px ' left='80px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-  <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" />
+  <!-- <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" /> -->
   <br>
   <img height =' 100px ' left='80px' src="./project/logo/fastify_logo.png" />
   <br>
