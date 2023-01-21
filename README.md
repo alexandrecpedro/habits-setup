@@ -104,6 +104,7 @@ The following tools were used in building the project:<br><br>
   <img height =' 100px ' left='80px' src="./project/logo/expo.png" />
   <br>
 </div>
+<br/>
 
 <div id="route">
 <h2> 🔎 Route </h2>
