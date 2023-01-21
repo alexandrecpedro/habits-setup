@@ -250,6 +250,13 @@ The following tools were used in building the project:<br><br>
             <li>Create Home screen: ./src/screens/Home.tsx</li>
             <li>React Native Phosphor Icon Library: npm install --save phosphor-react-native</li>
             <li>React Native Svg Library: expo install react-native-svg</li>
+            <li>Use UI Icons
+              <ul>
+                <li>Vector-Icons (Expo): MaterialIcons</li>
+                <li>Phosphor Icon React Native: CheckBox </li>
+                <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -263,7 +270,7 @@ The following tools were used in building the project:<br><br>
         </li>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Create feature: publish an ad (modal)
+            <li>Create feature: modal
               <ul>
                 <li>Install Radix-UI: npm i @radix-ui/react-dialog </li>
                 <li>Install Radix-UI: npm i @radix-ui/react-popover </li>
@@ -334,11 +341,22 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Creating checkboxes: npm i @radix-ui/react-checkbox</li>
+            <li>Use Radix UI Components 
+              <ul>
+                <li>Checkbox = npm install @radix-ui/react-checkbox</li>
+                <li>Select = npm install @radix-ui/react-select</li>
+                <li>Toggle Group = npm install @radix-ui/react-toggle-group</li>
+              </ul>
+            </li>
             <li>Get form data</li>
             <li>Syncing completed habits</li>
             <li>Connection with back-end
               <ul>
+                <li>Send modal values to API (backend service)
+                  <ul>
+                    <li>Axios: npm install axios</li>
+                  </ul>
+                </li>
                 <li>Set HTTP client</li>
                 <li>Fetching API summary</li>
                 <li>Using API data at Popover</li>
@@ -379,76 +397,45 @@ The following tools were used in building the project:<br><br>
       </ul> 
     </li> 
     <br>
-    <li &nbsp;>Part 5 - The next level<br />
+    <li &nbsp;>Part 5 - The next level<br/>
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Create component: CreateAdModal</li>
-            <li>Use Radix UI Components 
+            <li>List possible habits of the day
               <ul>
-                <li>Checkbox = npm install @radix-ui/react-checkbox</li>
-                <li>Select = npm install @radix-ui/react-select</li>
-                <li>Toggle Group = npm install @radix-ui/react-toggle-group</li>
+                <li>HabitsList component: ./src/components/HabitsList.tsx</li>
               </ul>
             </li>
-            <li>Send Ad modal values to API (backend service)
-              <ul>
-                <li>Axios: npm install axios</li>
-              </ul>
-            </li>
+            <li>Disabling on past dates</li>
+            <li>Syncing completed habits</li>
+            <li>Adding transitions and focus</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Create component: DuoMatch (Modal)</li>
-            <li>Set navigation from Game modal to DuoMatch (modal)</li>
-            <li>Use UI Icons
+            <li>Habit
               <ul>
-                <li>Vector-Icons (Expo): MaterialIcons</li>
-                <li>Phosphor Icon React Native: CheckCircle </li>
-                <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
+                <li>Fetch the habits of the selected day in the API</li>
+                <li>Display the list of habits of the day</li>
+                <li>Create empty habit list component: ./src/components/HabitsEmpty.tsx</li>
+                <li>Check if selected date is passed and show message you can't edit</li>
+                <li>Show the progress</li>
               </ul>
             </li>
-            <li>New Features
-              <ol>
-                <li>Condional open and close DuoMatch (modal) from Game page (screen)</li>
-                <li>Open DuoMatch (modal) when click at Connect button on Game page (screen)</li>
-                <li>When click at discordUser from DuoMatch (modal), keep this info to transfer area
-                  <ul>
-                    <li>Clipboard library: expo install expo-clipboard</li>
-                  </ul>
-                </li>
-                <li>Sending notifications (push), when keeping discordUser at device clipboard
-                  <ul>
-                    <li>Expo Notifications library: expo install expo-notifications</li>
-                    <li>New Services
-                      <ul>
-                        <li>Set user notifications configuration from this app</li>
-                        <li>Find device identificator token (getPushNotificationToken)</li>
-                        <li>Expo Modules Core library: expo install expo-modules-core</li>
-                        <li>Keep some devices references (useRef hook): getNotificationListener, responseNotificationListener</li>
-                        <li>Send the notification to an specific device by notification token </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li> Link with Discord Session
-                  <ul>
-                    <li>Expo AuthSession library: expo install expo-auth-session expo-random </li>
-                    <li>Create a new Screen: SignIn (./src/screens/SignIn/index.tsx)</li>
-                    <li>Get Discord Authentication URL: http://discord.com/developers/applications</li>
-                  </ul>
-                </li>
-              </ol>
+            <li>Send the habit status (performed or not) to the API
+              <ul>
+                <li>Using the useFocusEffect to update the home when returning</li>
+              </ul>
             </li>
-            <li>Before executing app:
-              <ol>
-                <li>At terminal: expo login</li>
-                <li>Enter your login credentials (user and password)</li>
-              </ol>
+            <li>Animation
+              <ul>
+                <li>Getting to know React Native Reanimated</li>
+                <li>Installing and configuring Reanimated in the application: npx expo install react-native-reanimated</li>
+                <li>Animate the ProgressBar</li>
+                <li>Animate the Checkbox</li>
+              </ul>
             </li>
-            <li>Start the app with expo: expo start</li>
-            <li>Test notifications using web interface (Push notifications tools): http://expo.dev/notifications</li>
+            <li>Testing all</li>
           </ul>
         </li>
       </ul> 
