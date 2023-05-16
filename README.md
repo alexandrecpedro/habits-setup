@@ -458,7 +458,7 @@ The following tools were used in building the project:<br><br>
     </li>
     <li &nbsp;>Enter the project directory:
       <ul>
-        <li>cd eSports</li>
+        <li>cd habits-setup</li>
       </ul>
     </li>
     <li><b>Testing</b>
