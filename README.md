@@ -453,7 +453,7 @@ The following tools were used in building the project:<br><br>
     <li &nbsp;>Set the development environment at you local computer</li>
     <li &nbsp;>Clone the repository
       <ul>
-        <li>git clone https://github.com/alexandrecpedro/world-cup-polls</li>
+        <li>git clone https://github.com/alexandrecpedro/habits-setup</li>
       </ul>
     </li>
     <li &nbsp;>Enter the project directory:
